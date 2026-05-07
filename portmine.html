@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhavika Aswani — Digital Growth Specialist</title>
+  <meta name="description" content="Bhavika Aswani is a Digital Growth Specialist crafting data-driven strategies that scale brands, amplify reach, and convert audiences into loyal communities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portstyle.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- THREE.JS Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-dot"></span>
+      <span>BA</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" data-text="About">About</a></li>
+      <li><a href="#services" data-text="Strategy">Strategy</a></li>
+      <li><a href="#work" data-text="Work">Work</a></li>
+      <li><a href="#contact" data-text="Contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contact" class="btn-nav">Let's Talk</a>
+    </div>
+  </nav>
+
+  <!-- HERO / INTRO SCENE -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-tag reveal-up" style="--delay:0.2s">
+        <span class="tag-dot"></span>
+        <span>Digital Growth Specialist</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="line reveal-clip" style="--delay:0.4s">Bhavika</span>
+        <span class="line reveal-clip" style="--delay:0.6s">Aswani<span class="accent-dot">.</span></span>
+      </h1>
+      <p class="hero-sub reveal-up" style="--delay:0.9s">
+        I don't just run campaigns — I architect <em>growth ecosystems</em>.<br/>
+        Turning data into decisions, audiences into advocates.
+      </p>
+      <div class="hero-actions reveal-up" style="--delay:1.1s">
+        <a href="#services" class="btn-primary">
+          <span>Explore My Strategy</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#work" class="btn-ghost">View Case Studies</a>
+      </div>
+      <div class="hero-metrics reveal-up" style="--delay:1.3s">
+        <div class="metric">
+          <span class="metric-num" data-target="6">0</span><span class="metric-unit">+</span>
+          <span class="metric-label">Years Experience</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-num" data-target="120">0</span><span class="metric-unit">%</span>
+          <span class="metric-label">Avg. ROAS Lift</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-num" data-target="40">0</span><span class="metric-unit">+</span>
+          <span class="metric-label">Brands Scaled</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to begin the journey</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-tag reveal-up">
+            <span class="tag-dot"></span> The Origin
+          </div>
+          <h2 class="section-title reveal-up" style="--delay:0.1s">
+            Where Strategy<br/><span class="text-gradient">Meets Velocity</span>
+          </h2>
+          <div class="about-visual reveal-up" style="--delay:0.2s">
+            <div class="about-card">
+              <div class="card-glow"></div>
+              <div class="card-initials">BA</div>
+              <div class="card-orbit">
+                <div class="orbit-ring orbit-ring--1"></div>
+                <div class="orbit-ring orbit-ring--2"></div>
+                <div class="orbit-dot orbit-dot--1"></div>
+                <div class="orbit-dot orbit-dot--2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="about-text reveal-up" style="--delay:0.15s">
+            I started my journey at the intersection of creative intuition and performance analytics — a rare combination in the digital marketing world. Over six years, I've built growth engines for D2C brands, SaaS platforms, and global enterprises alike.
+          </p>
+          <p class="about-text reveal-up" style="--delay:0.25s">
+            My philosophy: every brand has an untold story and an untapped audience. My job is to close that gap — with precision targeting, conversion-first content, and relentless optimisation loops.
+          </p>
+          <div class="about-skills reveal-up" style="--delay:0.35s">
+            <div class="skill-pill">Paid Media</div>
+            <div class="skill-pill">SEO & Content</div>
+            <div class="skill-pill">Growth Hacking</div>
+            <div class="skill-pill">Brand Strategy</div>
+            <div class="skill-pill">Data Analytics</div>
+            <div class="skill-pill">Email Marketing</div>
+            <div class="skill-pill">Funnel Design</div>
+            <div class="skill-pill">Social Strategy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES / STRATEGY JOURNEY -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal-up"><span class="tag-dot"></span> The Strategy Journey</div>
+        <h2 class="section-title reveal-up" style="--delay:0.1s">
+          Five Chapters of <br/><span class="text-gradient">Scalable Growth</span>
+        </h2>
+        <p class="section-desc reveal-up" style="--delay:0.2s">
+          Every engagement follows a battle-tested narrative — from discovery to dominance. Here's how we write your brand's next chapter.
+        </p>
+      </div>
+
+      <div class="journey-path">
+        <div class="journey-line"></div>
+
+        <div class="journey-step reveal-left" data-step="01">
+          <div class="step-number">01</div>
+          <div class="step-card">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+            <h3>Discovery & Diagnosis</h3>
+            <p>Deep-dive audits of your current digital footprint, competitive landscape, and audience psychographics. We don't guess — we decode.</p>
+            <div class="step-tags">
+              <span>Audit</span><span>Research</span><span>Data Mining</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-step journey-step--right reveal-right" data-step="02">
+          <div class="step-number">02</div>
+          <div class="step-card">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Architecture & Planning</h3>
+            <p>Custom growth blueprints built on validated data — defining channels, messaging hierarchy, funnel stages, and KPI frameworks.</p>
+            <div class="step-tags">
+              <span>Strategy</span><span>Funnel Design</span><span>KPIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-step reveal-left" data-step="03">
+          <div class="step-number">03</div>
+          <div class="step-card">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3>Activation & Launch</h3>
+            <p>Precision-targeted campaigns across paid, organic, and owned channels — with creative that converts and copy that compels.</p>
+            <div class="step-tags">
+              <span>Paid Ads</span><span>SEO</span><span>Content</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-step journey-step--right reveal-right" data-step="04">
+          <div class="step-number">04</div>
+          <div class="step-card">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Optimisation Loop</h3>
+            <p>Real-time performance monitoring, A/B testing, and iterative creative refreshes that compound returns week over week.</p>
+            <div class="step-tags">
+              <span>A/B Testing</span><span>Analytics</span><span>CRO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-step reveal-left" data-step="05">
+          <div class="step-number">05</div>
+          <div class="step-card">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            </div>
+            <h3>Scale & Dominate</h3>
+            <p>Systemised growth infrastructure — automation, retention playbooks, and brand moats that create compounding competitive advantages.</p>
+            <div class="step-tags">
+              <span>Automation</span><span>Retention</span><span>Scaling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / RESULTS -->
+  <section class="work section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal-up"><span class="tag-dot"></span> Case Studies</div>
+        <h2 class="section-title reveal-up" style="--delay:0.1s">
+          Results That <br/><span class="text-gradient">Speak Louder</span>
+        </h2>
+      </div>
+      <div class="work-grid">
+        <div class="work-card reveal-up" style="--delay:0.1s">
+          <div class="work-card-glow"></div>
+          <div class="work-meta"><span class="work-tag">D2C / Fashion</span></div>
+          <h3>Fashion Brand 3× Revenue in 90 Days</h3>
+          <p>Restructured the full paid media funnel across Meta & Google, introduced UGC-led creatives and retargeting sequences that tripled revenue within a single quarter.</p>
+          <div class="work-stats">
+            <div class="work-stat"><span class="wstat-num">3×</span><span>Revenue</span></div>
+            <div class="work-stat"><span class="wstat-num">68%</span><span>CAC Drop</span></div>
+            <div class="work-stat"><span class="wstat-num">4.8×</span><span>ROAS</span></div>
+          </div>
+        </div>
+
+        <div class="work-card reveal-up" style="--delay:0.2s">
+          <div class="work-card-glow"></div>
+          <div class="work-meta"><span class="work-tag">SaaS / B2B</span></div>
+          <h3>SaaS Platform 220% SQLs via LinkedIn</h3>
+          <p>Built a demand generation engine on LinkedIn with thought leadership content and hyper-personalised outbound sequences — turning cold audiences into qualified pipeline.</p>
+          <div class="work-stats">
+            <div class="work-stat"><span class="wstat-num">220%</span><span>SQL Growth</span></div>
+            <div class="work-stat"><span class="wstat-num">41%</span><span>Lower CPL</span></div>
+            <div class="work-stat"><span class="wstat-num">18mo</span><span>Timeline</span></div>
+          </div>
+        </div>
+
+        <div class="work-card reveal-up" style="--delay:0.3s">
+          <div class="work-card-glow"></div>
+          <div class="work-meta"><span class="work-tag">E-commerce / Health</span></div>
+          <h3>Health Brand Organic Traffic 0→80K/mo</h3>
+          <p>Led a programmatic SEO and content cluster strategy that grew organic traffic from near-zero to 80,000 monthly visitors in under a year, with 12% email capture rate.</p>
+          <div class="work-stats">
+            <div class="work-stat"><span class="wstat-num">80K</span><span>Mo. Visits</span></div>
+            <div class="work-stat"><span class="wstat-num">12%</span><span>Email CVR</span></div>
+            <div class="work-stat"><span class="wstat-num">#1</span><span>Rankings</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="section-tag reveal-up"><span class="tag-dot"></span> Start the Journey</div>
+          <h2 class="section-title reveal-up" style="--delay:0.1s">
+            Ready to <br/><span class="text-gradient">Ignite Growth?</span>
+          </h2>
+          <p class="contact-sub reveal-up" style="--delay:0.2s">
+            Whether you need a full growth overhaul or a targeted campaign, let's build something that moves the needle. Fill in the form and I'll be in touch within 24 hours.
+          </p>
+          <div class="contact-info reveal-up" style="--delay:0.3s">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>hello@bhavikaaswani.com</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>linkedin.com/in/bhavikaaswani</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right reveal-up" style="--delay:0.2s">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="e.g. Alex Thompson" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="you@company.com" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Company</label>
+                <input type="text" placeholder="Your brand name" />
+              </div>
+              <div class="form-group">
+                <label>Budget Range</label>
+                <select>
+                  <option value="">Select range</option>
+                  <option>$1K – $5K / mo</option>
+                  <option>$5K – $15K / mo</option>
+                  <option>$15K+ / mo</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>What's Your Growth Goal?</label>
+              <textarea placeholder="Describe your current challenge and the outcome you're aiming for..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-dot"></span>
+          <span>Bhavika Aswani</span>
+        </div>
+        <p class="footer-copy">© 2025 Bhavika Aswani. All rights reserved. Crafting growth, one strategy at a time.</p>
+        <div class="footer-links">
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AI ORB / DIGITAL TWIN -->
+  <div class="ai-orb-container" id="aiOrb">
+    <div class="orb-tooltip" id="orbTooltip">
+      <p id="tooltipText">Meet my Digital Twin</p>
+    </div>
+    <div class="orb-wrapper" id="orbWrapper">
+      <div class="orb-outer-ring"></div>
+      <div class="orb-mid-ring"></div>
+      <div class="orb-core">
+        <div class="orb-inner-glow"></div>
+        <span class="orb-initials">AI</span>
+      </div>
+      <div class="orb-pulse"></div>
+    </div>
+    <span class="orb-label">Digital Twin</span>
+  </div>
+
+  <!-- CHAT PANEL -->
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-header">
+      <div class="chat-avatar-mini">BA</div>
+      <div>
+        <div class="chat-name">Bhavika's Digital Twin</div>
+        <div class="chat-status"><span class="status-dot"></span> Active now</div>
+      </div>
+      <button class="chat-close" id="chatClose">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg ai-msg" id="introMsg" style="display:none">
+        <p>Hi! I am Bhavika Aswani's digital twin. I'm here to help you revolutionize your growth strategy. How can I assist you today? 🚀</p>
+      </div>
+    </div>
+    <div class="chat-suggestions" id="chatSuggestions">
+      <button class="suggestion-btn" data-msg="Tell me about your services">Tell me about services</button>
+      <button class="suggestion-btn" data-msg="What results have you achieved for clients?">Client results</button>
+      <button class="suggestion-btn" data-msg="How do I get started working with Bhavika?">Get started</button>
+    </div>
+    <div class="chat-input-row">
+      <input type="text" id="chatInput" placeholder="Ask me anything..." />
+      <button id="chatSend">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- THREE.JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="portscript.js"></script>
+</body>
+</html>
